@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolMathGames</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">CoolMathGames</h1>
+            <ul class="nav-menu">
+                <li><a href="#" onclick="showSection('games')" class="nav-link active">Games</a></li>
+                <li><a href="#" onclick="showSection('settings')" class="nav-link">Settings</a></li>
+                <li><a href="#" onclick="showSection('proxy')" class="nav-link">Proxy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Games Section -->
+        <section id="games" class="section active">
+            <h2>Games</h2>
+            <p>Welcome to CoolMathGames! Add your games here.</p>
+            <div class="games-grid">
+                <div class="game-card">
+                    <h3>Game 1</h3>
+                    <p>Description coming soon...</p>
+                    <button onclick="playGame(1)">Play</button>
+                </div>
+                <div class="game-card">
+                    <h3>Game 2</h3>
+                    <p>Description coming soon...</p>
+                    <button onclick="playGame(2)">Play</button>
+                </div>
+                <div class="game-card">
+                    <h3>Game 3</h3>
+                    <p>Description coming soon...</p>
+                    <button onclick="playGame(3)">Play</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings" class="section">
+            <h2>Settings</h2>
+            <div class="settings-container">
+                <div class="setting-item">
+                    <label for="theme">Theme:</label>
+                    <select id="theme" onchange="changeSetting('theme', this.value)">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label for="volume">Volume:</label>
+                    <input type="range" id="volume" min="0" max="100" value="50" onchange="changeSetting('volume', this.value)">
+                </div>
+                <div class="setting-item">
+                    <label for="notifications">Enable Notifications:</label>
+                    <input type="checkbox" id="notifications" onchange="changeSetting('notifications', this.checked)">
+                </div>
+            </div>
+        </section>
+
+        <!-- Proxy Section -->
+        <section id="proxy" class="section">
+            <h2>Proxy</h2>
+            <div class="proxy-container">
+                <p>Use this proxy to access websites:</p>
+                <div class="proxy-input-group">
+                    <input type="text" id="proxyUrl" placeholder="Enter URL here..." class="proxy-input">
+                    <button onclick="proxyAccess()" class="proxy-button">Go</button>
+                </div>
+                <div id="proxyFrame" class="proxy-frame"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
