@@ -5,32 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Math Games</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        nav { background: #333; color: white; padding: 15px; }
-        nav a { color: white; margin: 0 10px; text-decoration: none; }
-        .games-menu { margin-top: 20px; }
-        .game { margin: 10px 0; padding: 10px; border: 1px solid #ddd; }
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .game { margin-bottom: 40px; }
+        canvas { border: 1px solid black; }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Main Page</a>
-        <a href="#">Games Menu</a>
-    </nav>
-    <h1>Welcome to Cool Math Games</h1>
-    <div class="games-menu">
-        <h2>Select a Game to Play:</h2>
-        <div class="game">1. Kindergarten</div>
-        <div class="game">2. Kindergarten 2</div>
-        <div class="game">3. Minecraft-style</div>
-        <div class="game">4. Entitled Duck</div>
-        <div class="game">5. Drift Racers</div>
-        <div class="game">6. Roblox Avatar Customization</div>
-        <div class="game">7. Pinterest-style</div>
-        <div class="game">8. Spotify-style Music Player</div>
-        <div class="game">9. Bitlife-style Life Simulator</div>
-        <div class="game">10. Mousetrap Platformer</div>
-        <div class="game">11. Snow Rider Obstacle Course</div>
+    <h1>Cool Math Games</h1>
+    <div class="game">
+        <h2>1. Kindergarten (Shape Matching)</h2>
+        <canvas id="kindergartenCanvas" width="400" height="300"></canvas>
+        <p>Interactive shape matching game.</p>
+    </div>
+    <div class="game">
+        <h2>2. Kindergarten 2 (Color Quiz)</h2>
+        <canvas id="kindergarten2Canvas" width="400" height="300"></canvas>
+        <p>Color quiz game for kids.</p>
+    </div>
+    <div class="game">
+        <h2>3. Minecraft-style Block Builder</h2>
+        <canvas id="minecraftCanvas" width="400" height="300"></canvas>
+        <p>Create and build in a Minecraft-style world.</p>
+    </div>
+    <div class="game">
+        <h2>4. Duck Dodge Game</h2>
+        <canvas id="duckDodgeCanvas" width="400" height="300"></canvas>
+        <p>A dodging game with ducks!</p>
+    </div>
+    <div class="game">
+        <h2>5. Drift Racers</h2>
+        <canvas id="driftRacersCanvas" width="400" height="300"></canvas>
+        <p>Race and drift in this fun racing game.</p>
+    </div>
+    <div class="game">
+        <h2>6. Roblox Avatar Customizer</h2>
+        <canvas id="robloxCustomizerCanvas" width="400" height="300"></canvas>
+        <p>Customize your Roblox avatar!</p>
+    </div>
+    <div class="game">
+        <h2>7. Pinterest Pin Board</h2>
+        <canvas id="pinterestCanvas" width="400" height="300"></canvas>
+        <p>Create a virtual pin board.</p>
+    </div>
+    <div class="game">
+        <h2>8. Spotify Music Player</h2>
+        <canvas id="spotifyCanvas" width="400" height="300"></canvas>
+        <p>A music player styled for Spotify.</p>
+    </div>
+    <div class="game">
+        <h2>9. Bitlife Life Simulator</h2>
+        <canvas id="bitlifeCanvas" width="400" height="300"></canvas>
+        <p>Simulate a life in Bitlife!</p>
+    </div>
+    <div class="game">
+        <h2>10. Mousetrap Platformer</h2>
+        <canvas id="mousetrapCanvas" width="400" height="300"></canvas>
+        <p>Navigate through the mousetrap-themed platformer.</p>
+    </div>
+    <div class="game">
+        <h2>11. Snow Rider</h2>
+        <canvas id="snowRiderCanvas" width="400" height="300"></canvas>
+        <p>Ride through snow-covered hills!</p>
+    </div>
+    <div class="game">
+        <h2>12. Bonus Game Request Section</h2>
+        <p>Request your favorite games here!</p>
     </div>
 </body>
 </html>
